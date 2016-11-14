@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <title>Sitecore DesignRights</title>
+    <id>Krusen.Sitecore.DesignRights</id>
+    <version>1.0</version>
+    <authors>Søren Kruse</authors>
+    <projectUrl>https://github.com/Krusen/Sitecore-DesignAccessRights</projectUrl>
+    <description>Control page design rights individually per item.</description>
+    <copyright></copyright>
+    <tags>sitecore design access rights</tags>
+  </metadata>
+  <files>
+    <file src="src\Krusen.Sitecore.DesignRights\bin\Release\Krusen.Sitecore.DesignRights.dll" target="lib/net45" />
+    <file src="src\Krusen.Sitecore.DesignRights\bin\Release\Krusen.Sitecore.DesignRights.pdb" target="lib/net45" />
+
+    <file src="src\Krusen.Sitecore.DesignRights\App_Config\Include\*.config" target="content/App_Config/Include" />
+  </files>
+</package>
