@@ -18,7 +18,8 @@ new access right and controls access to the `CanDesign` policy depending on the 
 It also extends buttons related to presentation details in the Content Editor and Experience Editor so they also 
 listen to this new access right.
 
-> **NOTE**: After installing this you have to allow **Design** explicitly.
+> **NOTE**: After installing this you have to allow **Design** explicitly for users/roles.
+> If not set it is seen as "not allowed".
 
 ![Security Editor](assets/readme/security_editor.png?raw=true)
 
