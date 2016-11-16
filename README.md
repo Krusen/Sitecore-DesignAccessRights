@@ -22,8 +22,3 @@ listen to this new access right.
 > If not set it is seen as "not allowed".
 
 ![Security Editor](assets/readme/security_editor.png?raw=true)
-
-Limitations
-===========
-The `__Renderings` standard field it self can still be edited even though the user have not been given access to the new 
-**Design** access right.
