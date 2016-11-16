@@ -5,7 +5,7 @@ using Sitecore.Security.Accounts;
 
 namespace Krusen.Sitecore.DesignRights
 {
-    public class DesignRightsAuthorizationHelper : ItemAuthorizationHelper
+    public class DesignRightsItemAuthorizationHelper : ItemAuthorizationHelper
     {
         private static readonly ID PolicyCanDesignID = ID.Parse("{5A524BAD-2257-4330-9CAD-A2DCB1111A66}");
 
