@@ -3,7 +3,7 @@
   <metadata>
     <title>Sitecore DesignRights</title>
     <id>Krusen.Sitecore.DesignRights</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <authors>Søren Kruse</authors>
     <projectUrl>https://github.com/Krusen/Sitecore-DesignAccessRights</projectUrl>
     <description>Control page design rights individually per item.</description>
