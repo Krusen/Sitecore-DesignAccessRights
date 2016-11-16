@@ -24,7 +24,7 @@ namespace Krusen.Sitecore.DesignRights.Security
             if (!ShouldCheckDesignRights(item))
                 return result;
 
-            var designAccessResult = DesignAccessRight.GetAccess(item, account);
+            var designAccessResult = DesignAccessRight.GetAccess(Context.Item, account);
             if (designAccessResult.Permission != AccessPermission.Allow)
                 return designAccessResult;
 
