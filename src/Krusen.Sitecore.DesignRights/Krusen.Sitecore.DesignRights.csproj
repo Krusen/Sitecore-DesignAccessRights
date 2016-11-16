@@ -70,10 +70,10 @@
     <Compile Include="Commands\HideControl.cs" />
     <Compile Include="Commands\Reset.cs" />
     <Compile Include="Commands\SelectLayoutPreset.cs" />
-    <Compile Include="DesignAccessRight.cs" />
-    <Compile Include="DesignRightsItemAuthorizationHelper.cs" />
-    <Compile Include="DesignRightsAuthorizationProvider.cs" />
-    <Compile Include="DesignRightsFieldAuthorizationHelper.cs" />
+    <Compile Include="Security\DesignAccessRight.cs" />
+    <Compile Include="Security\DesignRightsItemAuthorizationHelper.cs" />
+    <Compile Include="Security\DesignRightsAuthorizationProvider.cs" />
+    <Compile Include="Security\DesignRightsFieldAuthorizationHelper.cs" />
     <Compile Include="ExperienceEditor\Requests\AddRendering\CanAddRendering.cs" />
     <Compile Include="ExperienceEditor\Requests\EditAllVersions\GetStatus.cs" />
     <Compile Include="ExperienceEditor\Requests\EnableDesigning\CanDesign.cs" />

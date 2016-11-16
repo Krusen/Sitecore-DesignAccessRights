@@ -5,7 +5,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Security.AccessControl;
 using Sitecore.Security.Accounts;
 
-namespace Krusen.Sitecore.DesignRights
+namespace Krusen.Sitecore.DesignRights.Security
 {
     class DesignRightsFieldAuthorizationHelper : FieldAuthorizationHelper
     {
@@ -20,7 +20,7 @@ namespace Krusen.Sitecore.DesignRights
             AccessResult result = null;
 
             if (ShouldCheckDesignRights(field, accessRight))
-                result = GetLayoutFieldAccess(field, account, accessRight);
+                result = GetLayoutFieldAccess(field, account);
 
             return result ?? base.GetAccess(field, account, accessRight);
         }
@@ -30,7 +30,7 @@ namespace Krusen.Sitecore.DesignRights
             return accessRight == AccessRight.FieldWrite && LayoutFieldIDs.Contains(field.ID);
         }
 
-        private static AccessResult GetLayoutFieldAccess(Field field, Account account, AccessRight accessRight)
+        private static AccessResult GetLayoutFieldAccess(Field field, Account account)
         {
             var accessResult = DesignAccessRight.GetAccess(field.Item, account);
             if (accessResult.Permission == AccessPermission.Allow)

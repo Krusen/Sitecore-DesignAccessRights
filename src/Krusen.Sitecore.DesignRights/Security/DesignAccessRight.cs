@@ -1,16 +1,16 @@
 using System;
+using Sitecore.Configuration;
 using Sitecore.Data.Items;
 using Sitecore.Security.AccessControl;
 using Sitecore.Security.Accounts;
 
-namespace Krusen.Sitecore.DesignRights
+namespace Krusen.Sitecore.DesignRights.Security
 {
     public class DesignAccessRight : AccessRight
     {
         public const string DefaultAccessRightName = "item:customdesign";
 
-        public static string AccessRightName { get; } =
-            global::Sitecore.Configuration.Settings.GetSetting("DesignRights.AccessRightName", DefaultAccessRightName);
+        public static string AccessRightName { get; } = Settings.GetSetting("DesignRights.AccessRightName", DefaultAccessRightName);
 
         private static readonly Lazy<AccessRight> _accessRight = new Lazy<AccessRight>(() => FromName(AccessRightName));
         public static AccessRight AccessRight => _accessRight.Value;

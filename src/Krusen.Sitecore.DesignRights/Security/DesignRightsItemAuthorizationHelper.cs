@@ -1,9 +1,10 @@
+using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Security.AccessControl;
 using Sitecore.Security.Accounts;
 
-namespace Krusen.Sitecore.DesignRights
+namespace Krusen.Sitecore.DesignRights.Security
 {
     public class DesignRightsItemAuthorizationHelper : ItemAuthorizationHelper
     {
@@ -23,18 +24,16 @@ namespace Krusen.Sitecore.DesignRights
             if (!ShouldCheckDesignRights(item))
                 return result;
 
-            var designAccessResult = AuthorizationManager.GetAccess(global::Sitecore.Context.Item, account, DesignAccessRight.AccessRight);
+            var designAccessResult = DesignAccessRight.GetAccess(item, account);
             if (designAccessResult.Permission != AccessPermission.Allow)
-            {
                 return designAccessResult;
-            }
 
             return result;
         }
 
         private static bool ShouldCheckDesignRights(Item item)
         {
-            return item.ID == PolicyCanDesignID && global::Sitecore.Context.Item != null;
+            return item.ID == PolicyCanDesignID && Context.Item != null;
         }
     }
 }

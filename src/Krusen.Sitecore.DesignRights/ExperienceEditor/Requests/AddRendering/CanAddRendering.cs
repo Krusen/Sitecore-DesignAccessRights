@@ -1,3 +1,4 @@
+using Krusen.Sitecore.DesignRights.Security;
 using Sitecore;
 
 namespace Krusen.Sitecore.DesignRights.ExperienceEditor.Requests.AddRendering

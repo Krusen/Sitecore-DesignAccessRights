@@ -1,4 +1,5 @@
-﻿using Sitecore;
+﻿using Krusen.Sitecore.DesignRights.Security;
+using Sitecore;
 using Sitecore.Shell.Framework.Commands;
 
 namespace Krusen.Sitecore.DesignRights.Commands

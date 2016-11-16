@@ -1,7 +1,7 @@
 using Sitecore.Buckets.Security;
 using Sitecore.Security.AccessControl;
 
-namespace Krusen.Sitecore.DesignRights
+namespace Krusen.Sitecore.DesignRights.Security
 {
     public class DesignRightsAuthorizationProvider : BucketAuthorizationProvider
     {
