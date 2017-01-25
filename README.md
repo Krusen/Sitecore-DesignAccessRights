@@ -1,5 +1,7 @@
 Overview
 ========
+[![NuGet](https://buildstats.info/nuget/krusen.sitecore.designRights?includePreReleases=false)](https://www.nuget.org/packages/Krusen.Sitecore.DesignRights/)
+
 In a default Sitecore installation you do not have much control over the rights to page design - changing the 
 presentation details or inserting/removing components from a page.
 
